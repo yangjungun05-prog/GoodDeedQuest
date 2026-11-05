@@ -60,7 +60,7 @@ AI가 나에게 맞는 선행을 골라 주고, 사진 한 장으로 인증하�
 
 기능별 AI 흐름은 [`docs/AI-WorkFlow`](docs/AI-WorkFlow)에, ERD와 페이지 흐름도, 스토리보드는 [`docs`](docs)에 있습니다.
 
-**기술:** Python 3.12 · FastAPI · SQLAlchemy · Alembic · Celery · PostgreSQL(pgvector) · Redis · LangGraph · LangChain · OpenAI · Gemini Vision · FAISS + BM25 · FFmpeg · React Native · Expo SDK 54 · TypeScript · Docker · AWS(EC2 · RDS · S3) · nginx · GitHub Actions
+**기술:** Python 3.12 · FastAPI · SQLAlchemy · Alembic · Celery · PostgreSQL · Redis · LangGraph · LangChain · OpenAI · Gemini Vision · FAISS + BM25 · FFmpeg · React Native · Expo SDK 54 · TypeScript · Docker · AWS(EC2 · RDS · S3) · nginx · GitHub Actions
 
 ## 내 컴퓨터에서 실행하기
 
