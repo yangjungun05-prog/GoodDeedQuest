@@ -32,9 +32,9 @@ def decide(result: dict, phash_distance: int | None, extra_keys: list[str]) -> V
         capture_time_known=result.get("capture_time_known", False),
         phash_distance=phash_distance,
     )
-    # 【판단】 AI 생성·위조로 의심되면 바로 거절한다. 원래는 의심점수에만 더해서
-    # 임계값을 넘어야 챌린지로 갔고, 점수가 모자라면 그대로 통과했다. 특히 봉사
-    # 확인서는 pHash 검사를 건너뛰어 점수가 덜 쌓이므로 통과할 여지가 컸다.
+    # 【판단】 AI 생성·위조로 의심되면 바로 거절한다. 원래는 의심점수에 3점을 더했고,
+    # 그것만으로 기준(3점)에 닿아 챌린지로 갔다. 챌린지는 종이에 손으로 적은 4자리
+    # 숫자만 확인하므로, 위조한 사람도 숫자를 적어 찍으면 통과할 수 있었다.
     # 위조는 "조금 의심스러운 것"이 아니라 그 자체로 실패여야 한다.
     if result.get("ai_generated", False):
         return Verdict(
